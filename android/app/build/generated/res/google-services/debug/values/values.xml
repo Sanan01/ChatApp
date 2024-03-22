@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">514862430665</string>
+    <string name="google_api_key" translatable="false">AIzaSyD68p56nM-71NA3rXkKTAQv9Z7Dn-fvWBo</string>
+    <string name="google_app_id" translatable="false">1:514862430665:android:1c8c4e052727b13ec29018</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD68p56nM-71NA3rXkKTAQv9Z7Dn-fvWBo</string>
+    <string name="google_storage_bucket" translatable="false">middletown-app-b2f65.appspot.com</string>
+    <string name="project_id" translatable="false">middletown-app-b2f65</string>
+</resources>

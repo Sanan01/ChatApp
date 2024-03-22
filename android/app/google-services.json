@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "514862430665",
+    "project_id": "middletown-app-b2f65",
+    "storage_bucket": "middletown-app-b2f65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514862430665:android:1c8c4e052727b13ec29018",
+        "android_client_info": {
+          "package_name": "com.middletownchiro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD68p56nM-71NA3rXkKTAQv9Z7Dn-fvWBo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

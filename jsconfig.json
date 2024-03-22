@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@assets": ["./src/assets"],
+      "@common": ["./src/common"],
+      "@components": ["./src/components"],
+      "@config": ["./src/config"],
+      "@modals": ["./src/modals"],
+      "@navigator": ["./src/navigator"],
+      "@screens": ["./src/screens"],
+      "@theme": ["./src/theme"],
+      "@translations": ["./src/translations"],
+      "@utils": ["./src/utils"],
+      "@i18n": ["./src/utils/i18n"],
+      "@Constants": ["./src/config/Constants"],
+      // "@datahandler": ["./src/utils/DataHandler"],
+      "@customHooks": ["./src/utils/CustomHooks"],
+      "@dummyData": ["./src/dummyData"],
+      "@ducks": ["./src/ducks"],
+      "@ducks/*": ["./src/ducks/*"],
+      "@ActionTypes": ["./src/ducks/ActionTypes"],
+      "@WebService": ["./src/config/WebService"],
+      "@ApiSauce": ["./src/utils/ApiSauce"],
+      "@navigatorConfig": ["./src/navigator/config"],
+      "@duckAuth": ["./src/ducks/auth"],
+      "@duckRequestFlags": ["./src/ducks/requestFlags"],
+      "@dataUtils": ["./src/dataUtils"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

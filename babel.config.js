@@ -1,0 +1,35 @@
+module.exports = {
+  presets: ["module:metro-react-native-babel-preset"],
+  plugins: [
+    [
+      "module-resolver",
+      {
+        alias: {
+          "@assets": "./src/assets",
+          "@common": "./src/common",
+          "@components": "./src/components",
+          "@config": "./src/config",
+          "@modals": "./src/modals",
+          "@navigator": "./src/navigator",
+          "@screens": "./src/screens",
+          "@theme": "./src/theme",
+          "@translations": "./src/translations",
+          "@utils": "./src/utils",
+          "@i18n": "./src/utils/i18n",
+          "@customHooks": "./src/utils/CustomHooks",
+          "@Constants": "./src/config/Constants",
+          "@navigatorConfig": "./src/navigator/config",
+          "@dummyData": "./src/dummyData",
+          "@ducks": "./src/ducks",
+          "@ActionTypes": "./src/ducks/ActionTypes",
+          "@WebService": "./src/config/WebService",
+          "@ApiSauce": "./src/utils/ApiSauce",
+          "@navigatorConfig": "./src/navigator/config",
+          "@duckAuth": "./src/ducks/auth",
+          "@duckRequestFlags": "./src/ducks/requestFlags",
+          "@dataUtils": "./src/dataUtils",
+        },
+      },
+    ],
+  ],
+};
