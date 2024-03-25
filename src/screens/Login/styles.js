@@ -3,6 +3,9 @@ import { Fonts, Colors, Metrics } from "@theme";
 
 export default styles = StyleSheet.create({
   container: {
+    flex: 1,
+    paddingHorizontal: Metrics.ratio(16),
+    alignItems: "center",
     justifyContent: "center",
   },
   containerSvgStyle: {

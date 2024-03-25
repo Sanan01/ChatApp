@@ -9,13 +9,10 @@ import { Login } from "@screens";
 import { screenOptions } from "./config";
 import BottomTabs from "./BottomTabs";
 import { getUserToken, getAuthorizationToken } from "../ducks/auth"; // orig
-import { get } from "lodash";
 
 const Stack = createNativeStackNavigator();
 
 function AppNavigator() {
-  const currentTime = new Date().getTime();
-
   /**
    * Get user from redux selector and check if user is logged in or not
    * @return {ReactElement}

@@ -1,19 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import {
-  View,
-  Text,
-  Keyboard,
-  ScrollView,
-  Pressable,
-  StatusBar,
-} from "react-native";
+import { View, Text, Keyboard, ScrollView, Pressable } from "react-native";
 import { useForm } from "react-hook-form";
 import KeyboardSpacer from "react-native-keyboard-spacer";
 
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Colors, Images } from "@theme";
 import { strings } from "@i18n";
-import { TextInput, Button } from "@common";
+import { TextInput, Button, Header } from "@common";
 import { ValidationUtil, NavigationService, Util } from "@utils";
 import { useInputProps } from "@customHooks";
 import { UserUtil } from "@dataUtils";
@@ -21,8 +14,6 @@ import { Loader, ThemeWrapper } from "@components";
 import { USER_ACTION, AUTH_IDENTIFIER_LOGIN } from "@ActionTypes";
 
 import styles from "./styles";
-
-const statusBarColor = Colors.lightMode.background;
 
 const Login = () => {
   /**
@@ -40,14 +31,6 @@ const Login = () => {
   const emailProps = useInputProps(formObj, "email");
   const passwordProps = useInputProps(formObj, "password");
   const [passwordEye, setPasswordEye] = useState(true);
-
-  // let deviceid
-
-  // useEffect(async () => {
-  //   //  deviceid = await OneSignal.getDeviceState();
-  //   //  deviceid = DeviceInfo.getUniqueIdSync();
-  //   // OneSignal.login("123");
-  // }, []);
 
   /**
    * @function onSubmit
@@ -103,6 +86,31 @@ const Login = () => {
    * @author Syed Amir Ali
    * @description Render UI Components
    * */
+
+  const RenderHeader = () => {
+    return (
+      <Header
+        centerButton={{
+          child: <Text>Center</Text>,
+          onPress: () => {
+            console.log("Center Button Pressed");
+          },
+        }}
+        leftButton={{
+          child: <Text>Left</Text>,
+          onPress: () => {
+            console.log("Left Button Pressed");
+          },
+        }}
+        rightButton={{
+          child: <Text>Right</Text>,
+          onPress: () => {
+            console.log("Right Button Pressed");
+          },
+        }}
+      />
+    );
+  };
 
   const RenderLogo = () => {
     return <View style={styles.containerSvgStyle}>{Images.svgs.logo}</View>;
@@ -198,7 +206,11 @@ const Login = () => {
 
   return (
     <ThemeWrapper>
-      <StatusBar backgroundColor={statusBarColor} barStyle="dark-content" />
+      {RenderHeader()}
+      <View style={styles.container}>
+        {RenderInputFields()}
+        {RenderButton()}
+      </View>
       {/* <ScrollView
         keyboardShouldPersistTaps="handled"
         showsVerticalScrollIndicator={false}
@@ -206,11 +218,11 @@ const Login = () => {
       > */}
       {/* {RenderLogo()}
         {RenderAuthTitle()} */}
-      {RenderInputFields()}
+      {/* {RenderInputFields()} */}
       {/* {RenderForgetPassword()} */}
       {/* {renderLoader()} */}
       {/* </ScrollView> */}
-      {RenderButton()}
+      {/* {RenderButton()} */}
       {Util.isPlatformIOS() && <KeyboardSpacer topSpacing={-30} />}
     </ThemeWrapper>
   );
