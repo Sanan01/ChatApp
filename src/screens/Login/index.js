@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { View, Text, Keyboard, ScrollView, Pressable } from "react-native";
+import React, { useState, useRef } from "react";
+import { View, Text, Keyboard, Pressable } from "react-native";
 import { useForm } from "react-hook-form";
 import KeyboardSpacer from "react-native-keyboard-spacer";
 
@@ -19,7 +19,7 @@ const Login = () => {
   /**
    * @function formObj
    * @memberof Login
-   * @author Syed Amir Ali
+   * @author Sanan Baig
    * @description set form hooks and submit form data to server and login user if success else show error message
    * */
 
@@ -35,7 +35,7 @@ const Login = () => {
   /**
    * @function onSubmit
    * @memberof Login
-   * @author Syed Amir Ali
+   * @author Sanan Baig
    * @description submit form data to server and login user if success else show error message
    * */
 
@@ -57,7 +57,7 @@ const Login = () => {
   /**
    * @function onPressForgetPassword
    * @memberof Login
-   * @author Syed Amir Ali
+   * @author Sanan Baig
    * @description Function to navigate to ResetPassword screen
    * */
 
@@ -68,7 +68,7 @@ const Login = () => {
   /**
    * @function scrollToPosition
    * @memberof Login
-   * @author Syed Amir Ali
+   * @author Sanan Baig
    * @description Function to scroll the ScrollView to a specific position
    * */
 
@@ -83,7 +83,7 @@ const Login = () => {
   /**
    * @memberof Login
    * @returns {JSX.Element}
-   * @author Syed Amir Ali
+   * @author Sanan Baig
    * @description Render UI Components
    * */
 
@@ -128,7 +128,7 @@ const Login = () => {
    * @memberof Login
    * @function handleImageClick
    * @returns boolean
-   * @author Sannan Baig
+   * @author Sanan Baig
    * @description  The following two functions are use to toggle eyeslash image on password input field
    * */
 
